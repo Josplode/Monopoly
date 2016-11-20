@@ -1,0 +1,557 @@
+COMMIT LOG
+
+
+commit 97eadecbc13eddc7033982f06c044e8cbfb35f30
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 19 21:19:31 2016 -0700
+
+    added README
+
+commit 7b0c4011db698bcfb4aecac440e2dc06b871e380
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 19 17:52:01 2016 -0700
+
+    Made a slight change to auctioning so that minbid is the price of property
+
+    Reason behind it: if the min bid was set at 0, allowing people to get
+    the property for less than what it costs, we might as well get rid of
+    the buy property function because everyone will want to auction (which
+    will be annoying because it's 10+ seconds per each auction). So I'm
+    doing this to deter people from auctioning all the time.
+
+commit 82c687bfa8a354d85c192799ee2395a72909713f
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Sat Nov 19 17:05:38 2016 -0700
+
+    Rounded values in auction, taxes, no more decimals
+
+commit e3b06845c4b59c718cb73a20aac9cefcad6a0748
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Sat Nov 19 16:52:11 2016 -0700
+
+    Chance card Pay Poor Tax of $15 sent me to go
+
+    fixed it
+
+commit bcffc90970a8141c0846bb3de2b143c07979977f
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Sat Nov 19 16:48:30 2016 -0700
+
+    Auction adjustments
+
+commit f886489390e7fa933eb47226f35e335596dd9edc
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 19 16:17:41 2016 -0700
+
+    Renamed package to a5
+
+commit edf28c24604be06f934537b57caca2ab3cf055ae
+Merge: 9973ea2 177108f
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 19 16:05:35 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/MonopolyController.java
+
+commit 9973ea27e8acfa65aec9a526c3acb0bd5a773083
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 19 16:03:45 2016 -0700
+
+    CC and Chance Cards working 100% now
+
+commit 177108f38673f25c312d114a974178dd54410d26
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Sat Nov 19 12:26:15 2016 -0700
+
+    Fix concurrency issues and golden tiles
+
+commit dc10b1a01cce604fecc32acd62c682641d718dde
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 23:27:24 2016 -0700
+
+    Selling tile to bank is more responsive
+
+commit 2231314a857574820139c2d00a0690c0ce88800b
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 23:23:42 2016 -0700
+
+    Reworked auctioning multithreading
+
+commit b060ea608e1bbfefd0c41613507cbd573f5f2c20
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 22:38:33 2016 -0700
+
+    Trying to fix chance cards again
+
+commit 1198bbe041e20865e5706f287ac2cf781128f23b
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 21:26:15 2016 -0700
+
+    Fixed Chance cards from drawing twice.
+
+commit 9a80788455c6124997a94ccb8de9e286c76b70fa
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 21:13:35 2016 -0700
+
+    fix the repair property card
+
+commit 15d2cc541c685aa1d4f5304a1844070f2bf9d430
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 21:02:18 2016 -0700
+
+    Fixed get out of jail UI
+
+commit 0de070d489c610cff905fa11c68e9d5b9f02b030
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 21:01:40 2016 -0700
+
+    Fix player not getting out of jail when rolled doubles
+
+commit 911800c0397adf08050b53b68d78ad171541a595
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 20:54:23 2016 -0700
+
+    Fixed covering of tiles
+
+commit 98c14c43ab81a903cffce619fadaabb48dbcdb13
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 20:47:09 2016 -0700
+
+    Fix buy property for real this time
+
+commit c265e46fb5de56436c1a60727d0971cc70680b7d
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 20:44:09 2016 -0700
+
+    Added style to cheat-roll and endgame
+
+commit 0120d23843dcee819927f979b1feed0941d3feb4
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 20:41:47 2016 -0700
+
+    Fixed z-index of game/turn timers
+
+commit 29a14beb5176b59e9d1ca718ebe23a988084a182
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 20:19:53 2016 -0700
+
+    Fix sell to bank fo real
+
+commit 3b570d0cb2f92246b5eac4fdc251245c9a78536d
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 20:06:57 2016 -0700
+
+    Fixed card drawing and sell to bank
+
+commit d919660e66e4e2691c3626eb623443fad1e6e8eb
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 19:47:00 2016 -0700
+
+    Random cards
+
+commit e879588e6629cb9c45060d7c8692e13e7bf653f1
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 19:42:01 2016 -0700
+
+    Mortgage updates
+
+commit 7aded4ca5551ca9c88c1d59648d71e5c05294b13
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 19:40:06 2016 -0700
+
+    Fixed update of chance/comchest
+
+commit a41e1a32c3d437436293dc840754d4362794f83a
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 19:22:33 2016 -0700
+
+    Fixed bug with get out of jail free card
+
+commit 76b8ba0c5fbeb247f63cc3da62b14d4b18634d38
+Merge: f15189d d2e920a
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 19:16:49 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/MonopolyController.java
+    #       src/cs414/a4/n/test/MonopolyTest.java
+
+commit f15189da420938675d508f14f2c207bc4ca77f85
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 19:15:42 2016 -0700
+
+    Got rid of wonky fomatting of chance card, go with previous version
+
+commit d2e920a2c22e373baad9dc90013d271a3e1defb4
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 19:10:37 2016 -0700
+
+    More sell to bank code fixes.
+
+    Got rid of extra chance card descriptions under regular cards when
+    hovering
+
+commit b65f934e2c1ed563fac77c3f13b85ab3b9d76edf
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 19:09:11 2016 -0700
+
+    Fixed the Chance Card Block
+
+commit d09dfad1d3c063e6f046fc52a60044a0c6145838
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 19:03:56 2016 -0700
+
+    fixed chance for property tiles
+
+commit 8202c0cf97d410860bf8844e84f81dc2299b4a97
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 19:00:58 2016 -0700
+
+    Lift Mortgage is in use now
+
+commit ce9dbcde770fcf9ef75b6d5dde2f75b6f8b69e7d
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 18:54:16 2016 -0700
+
+    More sell to bank stuff. Not fixed
+
+commit 5ffa0ec63df552ecac5a407b2725d757793952b5
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 18:40:33 2016 -0700
+
+    deleted goToJail Func
+
+commit 0a57a0fe2047c088af168087d94b0db6268cb566
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 18:40:13 2016 -0700
+
+    Adjusted player tokens
+
+commit e23d7286037c6d41011db257953dcee95f62eb13
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 18:38:10 2016 -0700
+
+    Bankrupt player background is now grey
+
+commit 6922c5eb38cfa9fd6cc43420800aa7fc546bba05
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 18:32:17 2016 -0700
+
+    Fixed Mortgage Stuff
+
+commit 7059fff2d02717d295c177dab9778e7e9741a3d9
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 18:22:36 2016 -0700
+
+    Made player token above everything
+
+commit 2943cc4560818bb1cd6f998d81387e406f4b9997
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 18:19:49 2016 -0700
+
+    Changed default game time to 20 minutes
+
+commit 1fb049e25441a40c8d984142cae4b7cecd5a5575
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 18:18:51 2016 -0700
+
+    Fixed auction and turn timer
+
+commit bcd918789e0a69099db6d3a6c0bfa027b944931c
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 18:14:40 2016 -0700
+
+    Updated debug menu layout
+
+commit 0424cc7c0d138131697e0f0446deb045d22aff01
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 18:14:11 2016 -0700
+
+    Adjusted turn time
+
+commit 77b3a24a5b847068339080e614a14e6fc40a4519
+Merge: 749831f 8548844
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 17:58:59 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/Monopoly.java
+
+commit 749831f78b20f189d957395f8c198e37af217e28
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 17:56:59 2016 -0700
+
+    Fixed The bugs with CC and Chance
+
+commit 854884485342e79861b847f786892fa2d6e3216c
+Merge: deed8c2 dbee3da
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 17:51:15 2016 -0700
+
+    Merge branch 'master' of https://github.com/Josplode/Monopoly
+
+commit deed8c28f504034db3dce2f30c6503283a8fd9b6
+Merge: 1bff945 af20e17
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 17:51:10 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/Monopoly.java
+
+commit dbee3dac5053cd5af0e996e6b75169283c9ec6a9
+Merge: f5c94f8 af20e17
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 17:46:18 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/Monopoly.java
+
+commit 1bff945e8e3d43cdeefba73b71f841555dcda834
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 17:44:51 2016 -0700
+
+    Added 1337 dice roll hacking (for testing)
+
+commit f5c94f81ffa57a37eaadf2a50afd97ebf5826f91
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Fri Nov 18 17:42:19 2016 -0700
+
+    Turn timoii
+
+commit af20e176af6516c1c861c401d4a8511376770d30
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 17:37:12 2016 -0700
+
+    Loopfix in netWorth Calculation
+
+commit 009cb8d57966343e8dadc7f7ef2dbe3d9ca23f2d
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 18 16:06:08 2016 -0700
+
+    Edited the endgame()
+
+commit 4861eb3473d7506c987e0f47ee5d44e84c1441b3
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Fri Nov 18 17:32:28 2016 -0700
+
+    Working on CC and Chance
+
+commit 5af292acbec6e73b81e48a0e27d0257e35725b5e
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Fri Nov 18 16:26:35 2016 -0700
+
+    Added Get out of Jail Free card front end
+
+commit 8061b019818c4b406b2ef05bad31d2d0ed741876
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Wed Nov 16 20:00:45 2016 -0700
+
+    Fixing bugs and made CC/Chance Card format pretty
+
+commit c5eaeb0675e6270f4a207b019776985023df7bef
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Wed Nov 16 09:13:05 2016 -0700
+
+    Did some styling with chance cards, found bug, will fix
+
+commit 84d55700a9da54644c46d5a5460f8f8ad0f02a66
+Merge: 45d3c5e b134fff
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Tue Nov 15 22:42:44 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       http/page.html
+    #       src/cs414/a4/n/GamePhase.java
+
+commit 45d3c5e9fba665758fd4b555603b6b848a2fec83
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Tue Nov 15 22:40:56 2016 -0700
+
+    Added endgame phase and UI
+
+commit b134fffb70e2e475bd1256b39d2de8aa2262e7bb
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 22:09:30 2016 -0700
+
+    Angular scope specification hotfix
+
+commit 80670fd478063c4c941ac6c933fdb30715971bb3
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 22:08:03 2016 -0700
+
+    Added text to chance button
+
+commit 91512a0b947668de6526ab2bbb7f0fa384b18597
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 22:00:51 2016 -0700
+
+    Community & Chance UI
+
+commit 6a56a440c568c27c43ce032ed8093f29519dfbaa
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 21:26:12 2016 -0700
+
+    Added propertyCost to Electric Company
+
+commit b76b924b8239da73057330ae803310afbb1d6815
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 21:15:49 2016 -0700
+
+    Fix jail bail out. Add house is hidden at correct times
+
+commit 34164eb2499a05b3903765444e49d9e64be6e76d
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Tue Nov 15 20:55:23 2016 -0700
+
+    Added UI for Remaining time
+
+commit 6b8d2e28cc13940adcfc5809cab2af3494e68d4a
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Tue Nov 15 19:39:52 2016 -0700
+
+    Removed unused variable
+
+commit e95a74de8a7e6c2a71aaab98757528b467577469
+Author: DylanCrescibene <dcrescibene@gmail.com>
+Date:   Tue Nov 15 18:26:38 2016 -0700
+
+    Added Time limit functionality
+
+commit 0bc2fcd9535ceca3373b63eea9a6bcc550202e5e
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Tue Nov 15 18:14:21 2016 -0700
+
+    End Game now returns the name of Winner
+
+commit b5283d9ff5931e24352685331be5d21a16319fec
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 17:58:37 2016 -0700
+
+    Hiding certain tiles
+
+commit 6f912956d856abf070e1f329416e579ded7c1aba
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Tue Nov 15 17:48:47 2016 -0700
+
+    Not sure how METHOD_DECLARATION was not included..
+
+commit 1b7ff24f4b96a9a8242c55afd6ad4962f64be37c
+Merge: 16b8af3 659b258
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Tue Nov 15 17:46:51 2016 -0700
+
+    Merge branch 'master' of https://github.com/Josplode/Monopoly
+
+commit 16b8af390b560fba1c0c09b983471084b62ff3db
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Tue Nov 15 17:46:47 2016 -0700
+
+    Wrote a wee-little helper method in tile for cc's
+
+commit 659b258c61f0b91d031f64a4fc4a5fd18d27409a
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 17:45:42 2016 -0700
+
+    Fixed game ending when player bankrupt
+
+commit 6242fceb0ff8f54309013b80422551cff74ccf69
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Tue Nov 15 17:37:58 2016 -0700
+
+    Have a endgame that is designed to show winner and resetGame to restart game
+
+commit 0eff6b35fcedd0cf22b228a37e138c4c59579922
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 17:27:20 2016 -0700
+
+    Fixed STUPID STUPID STUPID mistake
+
+commit 39fbe31d9e90a924b3343421b88e2b0948f60e26
+Merge: 5061665 de8ddb1
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Tue Nov 15 17:22:20 2016 -0700
+
+    Merge remote-tracking branch 'origin/master'
+
+    # Conflicts:
+    #       src/cs414/a4/n/Monopoly.java
+
+commit 5061665471387206b35fe16f60bc95e989a0b3b9
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Tue Nov 15 17:20:34 2016 -0700
+
+    Added some card logic, and a nice string to display
+
+    Seeded the random generator
+
+commit de8ddb1f004dd606b418c28747fe5cd6081389bd
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Tue Nov 15 17:19:26 2016 -0700
+
+    Created Networth Function to help with endgame features
+
+commit 84f2c280c9ed732e4fd9c2aaee1023ef3a4abbc8
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 17:17:50 2016 -0700
+
+    Added number of houses and owner to hover card
+
+commit ddf7ab34db52a18eea843901a8094d00ca08a5b0
+Author: aaronbarcz429 <aaronbarcz@gmail.com>
+Date:   Tue Nov 15 16:59:19 2016 -0700
+
+    Implemented Community Chest Function/Method/Sub-routine
+
+commit a304a646bb8c63061e83e8ec6a72b039e69138bc
+Author: joey-lunarg <joey@lunarg.com>
+Date:   Tue Nov 15 16:55:46 2016 -0700
+
+    Made player tokens have circles and shadows
+
+commit 1404c474e583ab6353997e28ed65cc5f8ab492aa
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Tue Nov 15 15:54:51 2016 -0700
+
+    Think I've completed chance card logic
+
+commit 4f3c0fd52c726cec62140082955ea63a69c733bf
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Tue Nov 15 11:42:25 2016 -0700
+
+    Removed Duplicate Code
+
+commit 72ccc927e042be891011c068c03247db20062446
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Mon Nov 14 22:06:18 2016 -0700
+
+    Got Community and Chance Card Parser Working
+
+commit 838250bb235c6b7b3d480c6d11ac2a70bb0d00c8
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 11 15:31:49 2016 -0700
+
+    In an auction, the name of the tile is displayed.
+
+commit aa9b3c3f56537fa715c9448ff869214989fd00f2
+Author: Chris Geohring <chrisgehg@gmail.com>
+Date:   Fri Nov 11 15:17:51 2016 -0700
+
+    Go to jail if player rolls 3 times in a row
+
+commit c3c7e383798ea39f7016d04d3516be8d19a7fe6d
+Author: Aaron Barczewski <aaron.barcz@gmail.com>
+Date:   Sat Nov 5 22:11:23 2016 -0600
+
+    Added Community Chest and Chance Card Description Files
